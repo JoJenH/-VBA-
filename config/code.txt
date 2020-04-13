@@ -1,0 +1,27 @@
+Sub 中文摘要标题()
+    With Selection.Font
+	原文为：
+	.Name = "黑体"
+	修改为：
+	.Name = "中文摘要摘要标题字体"
+	
+	原文为：
+	.Size = 18
+	修改为：
+        .Size = 中文摘要摘要标题大小
+    End With    
+End Sub
+
+Sub 毕业论文页边距()
+    With ActiveDocument.PageSetup
+
+	原文为：
+	.LeftMargin = CentimetersToPoints(30)
+        .RightMargin = CentimetersToPoints(30)
+
+	修改为：
+        .LeftMargin = CentimetersToPoints(页边距（mm）左边距)
+        .RightMargin = CentimetersToPoints(页边距（mm）右边距)
+
+    End With
+End Sub
