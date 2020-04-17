@@ -24,5 +24,5 @@ class GetData:
     def get_data(self):
         for row in self.row_dic:
             for col in self.col_dic:
-                self.data_dic[row+col]=str(self.get_value(row,col)).split('.')[0]
+                self.data_dic[row+col]=str(self.get_value(row,col))
         return self.data_dic
